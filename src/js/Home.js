@@ -1,2 +1,1 @@
-console.log('123')
-    // require('../css/Security.less')
+require('../css/Home.less')
