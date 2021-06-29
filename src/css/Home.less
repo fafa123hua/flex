@@ -43,9 +43,20 @@
 		.header-box-profile {
 			width: 54px;
 			height: 54px;
+			// 子类flex布局
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// 圆环
 			img {
 				// 将两张图片重叠
 				position: absolute;
+			}
+			// 头像图片
+			.header-box-profile-headPortrait {
+				width: 44px;
+				height: 44px;
+				border-radius: 50%;
 			}
 		}
 		// 消息
@@ -68,7 +79,21 @@
 	height: 290px;
 	left: 0px;
 	top: 108px;
-	background-color: black;
+	// 子类flex布局
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	.carousel-content {
+		width: 563px;
+		height: 214px;
+		background-color: black;
+	}
+	.carousel-control {
+		width: 375px;
+		height: 44px;
+		background-color: pink;
+	}
 }
 // 按键
 .buttons {
@@ -77,7 +102,50 @@
 	height: 270px;
 	left: 16px;
 	top: 414px;
-	background-color: blue;
+	// 子类flex布局
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	// 大盒子统一样式
+	.buttons-bigBox {
+		width: 107px;
+		height: 74px;
+		// 子类flex布局
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		// 小盒子统一样式
+		.buttons-bigBox-minBox {
+			width: 107px;
+			height: 44px;
+			background: #ffffff;
+			border-radius: 12px;
+			// 子类flex布局
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		// 文字统一样式
+		.buttons-bigBox-text {
+			width: 107px;
+			height: 20px;
+			// 字体
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+			font-feature-settings: 'ss04' on;
+			color: #8e8e93;
+		}
+	}
 }
 // 菜单
 .menu {
@@ -86,6 +154,34 @@
 	height: 94px;
 	left: 0px;
 	top: 718px;
-	background-color: green;
-	// flex布局
+	background: #ffffff;
+	border-radius: 24px 24px 0px 0px;
+	// 子类flex布局
+	display: flex;
+	.menu-box {
+		width: 375px;
+		height: 60px;
+		// 子类flex布局
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		// 盒子统一样式
+		.menu-box-button {
+			width: 107px;
+			height: 44px;
+			border-radius: 12px;
+			// 子类flex布局
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		// 点击盒子改变样式
+		.menu-box-buttonChange {
+			background: linear-gradient(71.48deg, #ffd60a 0%, #32d74b 62.9%);
+		}
+	}
 }
