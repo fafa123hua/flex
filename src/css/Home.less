@@ -23,8 +23,42 @@
 	// 限制边框
 	.header-box {
 		width: 343px;
-		height: 44px;
-		background-color: pink;
+		height: 64px;
+		// 子类flex布局
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// 设置
+		.header-box-settings {
+			width: 48px;
+			height: 44px;
+			background: #ffffff;
+			border-radius: 12px;
+			// 子类flex布局
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		// 头像
+		.header-box-profile {
+			width: 54px;
+			height: 54px;
+			img {
+				// 将两张图片重叠
+				position: absolute;
+			}
+		}
+		// 消息
+		.header-box-notification {
+			width: 48px;
+			height: 44px;
+			background: #ffffff;
+			border-radius: 12px;
+			// 子类flex布局
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 // 轮播图
