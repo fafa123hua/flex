@@ -79,22 +79,66 @@
 	height: 290px;
 	left: 0px;
 	top: 108px;
-	// 子类flex布局
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-end;
+	// 超出隐藏
+	overflow: hidden;
+	// 内容
 	.carousel-content {
-		width: 563px;
+		position: relative;
+		width: 965px;
 		height: 214px;
-		background-color: black;
+		left: -295px;
+		top: 16px;
+		// 子类flex
+		display: flex;
+		justify-content: space-between;
+		.carousel-content-box {
+			width: 311px;
+			height: 214px;
+			border-radius: 16px;
+			&:nth-child(1) {
+				background: conic-gradient(from 250.92deg at 50% 50%, #ff375f 0deg, #ff9f0a 360deg);
+				order: 1;
+			}
+			&:nth-child(2) {
+				background: conic-gradient(from 250.92deg at 50% 50%, #32d74b 0deg, #ffd60a 360deg);
+				order: 2;
+			}
+			&:nth-child(3) {
+				background: conic-gradient(from 250.92deg at 50% 50%, #bf5af2 0deg, #5e5ce6 360deg);
+				order: 3;
+			}
+		}
 	}
+	// 控制
 	.carousel-control {
+		position: absolute;
 		width: 375px;
 		height: 44px;
-		background-color: pink;
+		left: 0px;
+		top: 246px;
+		// 子类flex布局
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.carousel-control-frame {
+			width: 65px;
+			height: 8px;
+			// 子类flex布局
+			display: flex;
+			justify-content: space-between;
+			.carousel-control-frame-dot {
+				width: 8px;
+				height: 8px;
+				background: #8e8e93;
+				opacity: 0.2;
+				border-radius: 50%;
+				// 鼠标
+				cursor: pointer;
+			}
+		}
 	}
 }
+
 // 按键
 .buttons {
 	position: absolute;
