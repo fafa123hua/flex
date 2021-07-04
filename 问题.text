@@ -1,16 +1,11 @@
-css不推荐用_线命名
-https://www.cnblogs.com/bluers/p/3589516.html
+bem
 
-有时候会出现body盒子的width的值并不是100%
-
-nth-child()有什么局限性
-
-flex布局行是无法选择固定数量的吗？
-
-背景图不知道要如何处理，还是采用的之前的定位
+grid
 
 修改成webpack后图片文件引用路径存疑
 
-home页面整体格式无法用flex实现
-
 四分之三空心圆一般怎么实现
+
+css clip 
+svg
+js canvas  

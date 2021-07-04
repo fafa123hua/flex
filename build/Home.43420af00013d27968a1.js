@@ -114,7 +114,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
   \************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("console.log(123)\r\n\r\nfunction asd() {\r\n    console.log(12345)\r\n}\r\n__webpack_require__(/*! ../css/Home.less */ \"./src/css/Home.less\")\r\n__webpack_require__(/*! ../css/Home.css */ \"./src/css/Home.css\")\n\n//# sourceURL=webpack://webpackconfig/./src/js/Home.js?");
+eval("console.log(123)\r\n\r\nfunction asd() {\r\n    console.log(12345)\r\n}\r\nwindow.asd = asd\r\n__webpack_require__(/*! ../css/Home.less */ \"./src/css/Home.less\")\r\n__webpack_require__(/*! ../css/Home.css */ \"./src/css/Home.css\")\n\n//# sourceURL=webpack://webpackconfig/./src/js/Home.js?");
 
 /***/ })
 
